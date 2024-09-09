@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Google Docs Embed</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+        }
+        .container {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        h1 {
+            text-align: center;
+            font-size: 1.2rem;
+            margin: 0 0 0px 0;
+        }
+        .responsive-iframe {
+            flex-grow: 1;
+            position: relative;
+        }
+        .responsive-iframe iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            box-shadow: none;
+        }
+        .add-button {
+            position: fixed;
+            bottom: 16px;
+            right: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 56px;
+            height: 56px;
+            font-size: 24px;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            text-decoration: none;
+        }
+        .add-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="responsive-iframe">
+            <iframe src="https://docs.google.com/document/d/1QbUgje29dPYSgLrG1goznmu483KYr3_dwso3dDxOb64/edit?usp=sharing"></iframe>
+        </div>
+    </div>
+    <a href="https://forms.gle/HEDodjuYUfftxvKV7" class="add-button" target="_blank">+</a>
+</body>
+</html>
